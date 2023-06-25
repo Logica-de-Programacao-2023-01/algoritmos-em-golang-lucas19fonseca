@@ -1,0 +1,136 @@
+1.
+func main() {
+	var num1, num2, num3 int
+
+	fmt.Println("Digite o primeiro número:")
+	fmt.Scanln(&num1)
+
+	fmt.Println("Digite o segundo número:")
+	fmt.Scanln(&num2)
+
+	fmt.Println("Digite o terceiro número:")
+	fmt.Scanln(&num3)
+
+	soma := num1 + num2 + num3
+
+	fmt.Println("A soma dos três números é:", soma)
+}
+2.
+func main() {
+	var numero int
+
+	fmt.Println("Digite um número inteiro:")
+	fmt.Scanln(&numero)
+
+	dobro := numero * 2
+	triplo := numero * 3
+	quadruplo := numero * 4
+
+	fmt.Println("O dobro do número é:", dobro)
+	fmt.Println("O triplo do número é:", triplo)
+	fmt.Println("O quadruplo do número é:", quadruplo)
+}
+3.func main() {
+	var peso, altura float64
+
+	fmt.Println("Digite o peso (em kg):")
+	fmt.Scanln(&peso)
+
+	fmt.Println("Digite a altura (em metros):")
+	fmt.Scanln(&altura)
+
+	imc := peso / (altura * altura)
+
+	fmt.Printf("O IMC é: %.2f\n", imc)
+}
+4.func main() {
+	var num1, num2, num3 float64
+	var peso1, peso2, peso3 float64
+
+	fmt.Println("Digite o primeiro número:")
+	fmt.Scanln(&num1)
+
+	fmt.Println("Digite o segundo número:")
+	fmt.Scanln(&num2)
+
+	fmt.Println("Digite o terceiro número:")
+	fmt.Scanln(&num3)
+
+	peso1 = 2
+	peso2 = 3
+	peso3 = 5
+
+	mediaPonderada := (num1*peso1 + num2*peso2 + num3*peso3) / (peso1 + peso2 + peso3)
+
+	fmt.Printf("A média ponderada é: %.2f\n", mediaPonderada)
+}
+5.func main() {
+	var idadeAnos int
+
+	fmt.Println("Digite a idade em anos:")
+	fmt.Scanln(&idadeAnos)
+
+	idadeDias := idadeAnos * 365
+
+	fmt.Println("A idade em dias é:", idadeDias)
+}
+6.func main() {
+	var salario float64
+
+	fmt.Println("Digite o salário do funcionário:")
+	fmt.Scanln(&salario)
+
+	aumento := salario * 0.15
+	novoSalario := salario + aumento
+
+	fmt.Println("O novo salário com aumento é:", novoSalario)
+}
+7.func main() {
+	var numero int
+
+	fmt.Println("Digite um número inteiro:")
+	fmt.Scanln(&numero)
+
+	antecessor := numero - 1
+	sucessor := numero + 1
+
+	fmt.Println("O antecessor é:", antecessor)
+	fmt.Println("O sucessor é:", sucessor)
+}
+8.
+func main() {
+	var diasTrabalhados int
+	var valorDiaria float64
+
+	fmt.Println("Digite o número de dias trabalhados:")
+	fmt.Scanln(&diasTrabalhados)
+
+	fmt.Println("Digite o valor da diária:")
+	fmt.Scanln(&valorDiaria)
+
+	salario := float64(diasTrabalhados) * valorDiaria
+
+	fmt.Println("O salário do funcionário é:", salario)
+}
+9.
+func main() {
+	var precoProduto float64
+
+	fmt.Println("Digite o preço do produto:")
+	fmt.Scanln(&precoProduto)
+
+	desconto := precoProduto * 0.10
+	precoComDesconto := precoProduto - desconto
+
+	fmt.Println("O valor com desconto de 10% é:", precoComDesconto)
+}
+10.func main() {
+	var pesoQuilos float64
+
+	fmt.Println("Digite o peso em quilos:")
+	fmt.Scanln(&pesoQuilos)
+
+	pesoLibras := pesoQuilos * 2.20462
+
+	fmt.Println("O peso em libras é:", pesoLibras)
+}
