@@ -1,0 +1,123 @@
+1.func main() {
+	for i := 1; i <= 10; i++ {
+		fmt.Println(i)
+	}
+}
+2.import "fmt"
+
+func main() {
+	for i := 0; i <= 20; i += 2 {
+		fmt.Println(i)
+	}
+}
+3.import "fmt"
+
+func main() {
+	for i := 1; i <= 19; i += 2 {
+		fmt.Println(i)
+	}
+}
+4.import "fmt"
+
+func main() {
+	for i := 0; i <= 30; i += 3 {
+		fmt.Println(i)
+	}
+}
+5.
+import "fmt"
+
+func main() {
+	for i := 10; i >= 1; i-- {
+		fmt.Println(i)
+	}
+}
+6.func main() {
+	var numero int
+
+	fmt.Println("Digite um número:")
+	fmt.Scanln(&numero)
+
+	fmt.Println("Tabuada de multiplicação de", numero, ":")
+
+	for i := 1; i <= 10; i++ {
+		resultado := numero * i
+		fmt.Println(numero, "x", i, "=", resultado)
+	}
+}
+7.func main() {
+	for i := 1; i <= 100; i++ {
+		if i%3 == 0 && i%5 == 0 {
+			fmt.Println("FizzBuzz")
+		} else if i%3 == 0 {
+			fmt.Println("Fizz")
+		} else if i%5 == 0 {
+			fmt.Println("Buzz")
+		} else {
+			fmt.Println(i)
+		}
+	}
+}
+8.func main() {
+	var numero int
+
+	fmt.Println("Digite um número inteiro positivo:")
+	fmt.Scanln(&numero)
+
+	fmt.Println("Divisores de", numero, ":")
+
+	for i := 1; i <= numero; i++ {
+		if numero%i == 0 {
+			fmt.Println(i)
+		}
+	}
+}
+9.func main() {
+	var numero, soma int
+	quantidade := 0
+
+	fmt.Println("Digite os números inteiros (digite 0 para encerrar):")
+
+	for {
+		fmt.Scanln(&numero)
+
+		if numero == 0 {
+			break
+		}
+
+		soma += numero
+		quantidade++
+	}
+
+	if quantidade > 0 {
+		media := float64(soma) / float64(quantidade)
+		fmt.Println("A média dos números é:", media)
+	} else {
+		fmt.Println("Nenhum número foi inserido.")
+	}
+}
+10.func main() {
+	var numero, maior int
+	temNumero := false
+
+	fmt.Println("Digite os números inteiros (digite 0 para encerrar):")
+
+	for {
+		fmt.Scanln(&numero)
+
+		if numero == 0 {
+			break
+		}
+
+		if !temNumero || numero > maior {
+			maior = numero
+			temNumero = true
+		}
+	}
+
+	if temNumero {
+		fmt.Println("O maior número é:", maior)
+	} else {
+		fmt.Println("Nenhum número foi inserido.")
+	}
+}
