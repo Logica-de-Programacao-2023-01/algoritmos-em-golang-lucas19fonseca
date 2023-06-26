@@ -56,11 +56,11 @@ func main() {
 	fmt.Println("Digite o terceiro número:")
 	fmt.Scanln(&num3)
 
-	peso1 = 2
-	peso2 = 3
-	peso3 = 5
+	Weight1 = 2
+	Weight2 = 3
+	Weight3 = 5
 
-	mediaPonderada := (num1*peso1 + num2*peso2 + num3*peso3) / (peso1 + peso2 + peso3)
+	mediaPonderada := (num1*Weight1 + num2*Weight2 + num3*Weight3) / (Weight1 + Weight2 + Weight3)
 
 	fmt.Printf("A média ponderada é: %.2f\n", mediaPonderada)
 }
