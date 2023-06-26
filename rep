@@ -118,6 +118,6 @@ func main() {
 	if temNumero {
 		fmt.Println("O maior número é:", maior)
 	} else {
-		fmt.Println("Nenhum número foi inserido.")
+		fmt.Println("No number has been entered.")
 	}
 }
