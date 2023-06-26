@@ -7,12 +7,12 @@
 	fmt.Println("Digite o segundo número:")
 	fmt.Scanln(&num2)
 
-	var maior int
+	var bigger int
 
 	if num1 > num2 {
-		maior = num1
+		bigger = num1
 	} else {
-		maior = num2
+		bigger = num2
 	}
 
 	fmt.Println("O maior número é:", maior)
